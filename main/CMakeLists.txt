@@ -1,0 +1,18 @@
+idf_component_register(SRCS 
+                            "main.c"
+                            "app.c"
+                            "ui/ui.c"
+                            "ui/screens/ui_main.c"
+                            "ui/images/chinese_chess.c"
+                            "ui/images/nation_chess.c"
+                            "ui/images/demo.c"
+                            "ui/images/set_icon.c"
+                            "ui/images/taito.c"
+                            "ui/images/wifi_icon_1.c"
+                            "ui/images/wifi_icon_2.c"
+                            "ui/images/wifi_icon_3.c"
+                            "ui/images/notion_chees.c"
+                            "ui/images/chain_chees.c"
+                            "ui/images/no_visiondemo.c"
+                    INCLUDE_DIRS "."
+                                 "ui")
