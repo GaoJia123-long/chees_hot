@@ -29,6 +29,12 @@ void app_main(void)
     ui_init();
     ui_Main_screen_init();
     lv_disp_load_scr(ui_Main);
+    // ui_Username_screen_init();
+    // lv_disp_load_scr(ui_Username);
+    // ui_Userswitch_screen_init();
+    // lv_disp_load_scr(ui_Userswitch);
+    ui_Menustrap_screen_init();
+    lv_disp_load_scr(ui_Menustrap);
     bsp_display_unlock();
 
     bsp_display_set_brightness(100);

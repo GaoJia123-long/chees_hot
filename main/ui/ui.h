@@ -14,6 +14,15 @@ extern lv_obj_t *ui_Menu;
 void ui_Subm_screen_init(void);
 extern lv_obj_t *ui_Subm;
 
+void ui_Username_screen_init(void);
+extern lv_obj_t *ui_Username;
+
+extern void ui_Userswitch_screen_init(void);
+extern lv_obj_t *ui_Userswitch;
+
+extern void ui_Menustrap_screen_init(void);
+extern lv_obj_t *ui_Menustrap;
+
 LV_IMG_DECLARE(demo);
 LV_IMG_DECLARE(no_visiondemo);
 LV_IMG_DECLARE(set_image);
@@ -35,6 +44,9 @@ LV_IMG_DECLARE(wpoint2_image);
 LV_IMG_DECLARE(c_clash_image);
 LV_IMG_DECLARE(cc_clash_image);
 LV_IMG_DECLARE(nc_sc_image);
+LV_IMG_DECLARE(uncheck);
+LV_IMG_DECLARE(check);
+LV_IMG_DECLARE(QR_code_image);
 
 LV_FONT_DECLARE(MiSansBold_26);
 LV_FONT_DECLARE(MiSansRegular_40);
