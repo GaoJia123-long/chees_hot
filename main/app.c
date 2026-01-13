@@ -12,6 +12,10 @@ static const char *TAG = "app";
 
 #define CFG_NAMESPACE "cfg"
 
+app_t app = {
+    .subsele = 0,
+};
+
 esp_err_t app_init(void)
 {
     esp_err_t ret = ESP_OK;

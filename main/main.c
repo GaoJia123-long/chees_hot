@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 #include "bsp_i2c.h"
 #include "bsp_display.h"
 #include "bsp_touch.h"
@@ -17,8 +16,6 @@
 
 static const char *TAG = "app_main";
 
-
-
 void app_main(void)
 {
     esp_err_t ret = ESP_OK;
@@ -27,21 +24,17 @@ void app_main(void)
     app_init();
 
     bsp_display_start();
-    
-        bsp_display_lock(0);
-        ui_init();
-        ui_Main_screen_init();
-        lv_disp_load_scr(ui_Main);
-        bsp_display_unlock();
 
-    bsp_display_set_brightness(100);
-    // 创建图片对象
-    
+    bsp_display_lock(0);
+    ui_init();
+    ui_Main_screen_init();
+    lv_disp_load_scr(ui_Main);
+    bsp_display_unlock();
 
+    bsp_display_set_brightness(20);
 
-    while(1) {
+    while (1)
+    {
         vTaskDelay(pdMS_TO_TICKS(10));
     }
-
 }
-
