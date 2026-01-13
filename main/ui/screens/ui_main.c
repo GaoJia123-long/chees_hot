@@ -130,7 +130,7 @@ void ui_Main_screen_init(void)
     lv_obj_set_style_bg_color(cchess_btn, lv_color_hex(0xFF5C4D), LV_PART_MAIN);
     lv_obj_clear_flag(cchess_btn, LV_OBJ_FLAG_SCROLLABLE); /// Flags
     lv_obj_add_flag(cchess_btn, LV_OBJ_FLAG_GESTURE_BUBBLE);
-   // lv_obj_add_event_cb(cchess_btn, button_click_handler, LV_EVENT_CLICKED, NULL);
+    lv_obj_add_event_cb(cchess_btn, button_click_handler, LV_EVENT_CLICKED, NULL);
 
     lv_obj_t *img_cchess = lv_img_create(cchess_btn);
     lv_img_set_src(img_cchess, &cchess_image);
@@ -143,7 +143,7 @@ void ui_Main_screen_init(void)
     lv_obj_set_style_bg_color(chess_btn, lv_color_hex(0xFF8C4A), LV_PART_MAIN);
     lv_obj_clear_flag(chess_btn, LV_OBJ_FLAG_SCROLLABLE); /// Flags
     lv_obj_add_flag(chess_btn, LV_OBJ_FLAG_GESTURE_BUBBLE);
-   // lv_obj_add_event_cb(chess_btn, button_click_handler, LV_EVENT_CLICKED, NULL);
+    lv_obj_add_event_cb(chess_btn, button_click_handler, LV_EVENT_CLICKED, NULL);
 
     lv_obj_t *img_chess = lv_img_create(chess_btn);
     lv_img_set_src(img_chess, &chess_image);

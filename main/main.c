@@ -31,7 +31,7 @@ void app_main(void)
     lv_disp_load_scr(ui_Main);
     bsp_display_unlock();
 
-    bsp_display_set_brightness(20);
+    bsp_display_set_brightness(100);
 
     while (1)
     {
