@@ -10,6 +10,7 @@ idf_component_register(SRCS
                             "ui/screens/ui_userswitch.c"
                             "ui/screens/ui_menustrap.c"
                             "ui/screens/ui_netset.c"
+                            "ui/screens/ui_netpassword.c"
                             "ui/images/demo.c"
                             "ui/images/no_visiondemo.c"
                             "ui/images/set_image.c"
@@ -41,6 +42,9 @@ idf_component_register(SRCS
                             "ui/images/wifi1_image.c"
                             "ui/images/wifi2_image.c"
                             "ui/images/wifi3_image.c"
+                            "ui/images/closeeye_image.c"
+                            "ui/images/openeye_image.c"
+                            "ui/images/keypad.c"
 
                             "ui/fonts/MiSansBold_26.c"
                             "ui/fonts/MiSansRegular_40.c"

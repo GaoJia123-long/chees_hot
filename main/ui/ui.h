@@ -26,6 +26,9 @@ extern lv_obj_t *ui_Menustrap;
 extern void ui_Netset_screen_init(void);
 extern lv_obj_t *ui_Netset;
 
+extern void ui_Netpassword_screen_init(void);
+extern lv_obj_t *ui_Netpassword;
+
 LV_IMG_DECLARE(demo);
 LV_IMG_DECLARE(no_visiondemo);
 LV_IMG_DECLARE(set_image);
@@ -57,6 +60,9 @@ LV_IMG_DECLARE(wifi0_image);
 LV_IMG_DECLARE(wifi1_image);
 LV_IMG_DECLARE(wifi2_image);
 LV_IMG_DECLARE(wifi3_image);
+LV_IMG_DECLARE(closeeye_image);
+LV_IMG_DECLARE(openeye_image);
+LV_IMG_DECLARE(closeeye_image);
 
 LV_FONT_DECLARE(MiSansBold_26);
 LV_FONT_DECLARE(MiSansRegular_40);
