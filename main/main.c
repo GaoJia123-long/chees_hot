@@ -33,8 +33,10 @@ void app_main(void)
     // lv_disp_load_scr(ui_Username);
     // ui_Userswitch_screen_init();
     // lv_disp_load_scr(ui_Userswitch);
-    //ui_Menustrap_screen_init();
-    //lv_disp_load_scr(ui_Menustrap);
+    // ui_Menustrap_screen_init();
+    // lv_disp_load_scr(ui_Menustrap);
+    ui_Netset_screen_init();
+    lv_disp_load_scr(ui_Netset);
     bsp_display_unlock();
 
     bsp_display_set_brightness(100);

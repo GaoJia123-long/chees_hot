@@ -23,6 +23,9 @@ extern lv_obj_t *ui_Userswitch;
 extern void ui_Menustrap_screen_init(void);
 extern lv_obj_t *ui_Menustrap;
 
+extern void ui_Netset_screen_init(void);
+extern lv_obj_t *ui_Netset;
+
 LV_IMG_DECLARE(demo);
 LV_IMG_DECLARE(no_visiondemo);
 LV_IMG_DECLARE(set_image);
@@ -47,6 +50,13 @@ LV_IMG_DECLARE(nc_sc_image);
 LV_IMG_DECLARE(uncheck);
 LV_IMG_DECLARE(check);
 LV_IMG_DECLARE(QR_code_image);
+LV_IMG_DECLARE(link_image);
+LV_IMG_DECLARE(lock_imaeg);
+LV_IMG_DECLARE(white_image);
+LV_IMG_DECLARE(wifi0_image);
+LV_IMG_DECLARE(wifi1_image);
+LV_IMG_DECLARE(wifi2_image);
+LV_IMG_DECLARE(wifi3_image);
 
 LV_FONT_DECLARE(MiSansBold_26);
 LV_FONT_DECLARE(MiSansRegular_40);
