@@ -131,7 +131,7 @@ void ui_Netpassword_screen_init(void)
 
     lv_obj_t *ui_LabelButton2 = lv_label_create(wifi_btn2);
     // lv_label_
-    lv_obj_align(ui_LabelButton2, LV_ALIGN_CENTER, -1100, 0);
+    lv_obj_align(ui_LabelButton2, LV_ALIGN_CENTER, -100, 0);
     lv_obj_set_style_text_font(ui_LabelButton2, &MiSansBold_26, 0);
     lv_label_set_text(ui_LabelButton2, "输入密码");
     lv_obj_set_style_text_color(ui_LabelButton2, lv_color_hex(0xAAAAAA), 0);
