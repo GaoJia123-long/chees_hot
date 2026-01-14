@@ -27,12 +27,21 @@ static void update_button_colors(lv_obj_t *selected_btn)
     
     lv_obj_set_style_bg_color(white_btn4, lv_color_hex(0xffffff), LV_PART_MAIN);
     lv_obj_set_style_bg_opa(white_btn4, 41, LV_PART_MAIN);
+
+    lv_obj_set_style_bg_color(selected_btn, lv_color_hex(0xE8E8E8), LV_PART_MAIN);
+        lv_obj_set_style_bg_opa(selected_btn, LV_OPA_100, LV_PART_MAIN);
     
     // 将选中的按钮设置为选中状态（0xE8E8E8，透明度100）
-    if(selected_btn != NULL) {
-        lv_obj_set_style_bg_color(selected_btn, lv_color_hex(0xE8E8E8), LV_PART_MAIN);
-        lv_obj_set_style_bg_opa(selected_btn, LV_OPA_100, LV_PART_MAIN);
+    if(selected_btn == white_btn){
+        _ui_screen_change(&ui_Username, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                                      ui_Username_screen_init);
+    }else if(selected_btn == white_btn2){
+        _ui_screen_change(&ui_Menustrap, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                                      ui_Menustrap_screen_init);
     }
+    //if(selected_btn != NULL) {
+    //    
+    //}
 }
 
 // 按钮点击事件处理函数

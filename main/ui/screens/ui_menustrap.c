@@ -44,12 +44,15 @@ static void button_click_handler(lv_event_t *e)
     switch (code)
     {
     case LV_EVENT_SHORT_CLICKED:
-        if (lv_event_get_target(e) == img_home || lv_event_get_target(e) == img_leftarr)
-        {
-            _ui_screen_change(&ui_Main, LV_SCR_LOAD_ANIM_NONE, 0, 0,
-                              ui_Main_screen_init);
-        }
-        break;
+        if (lv_event_get_target(e) == img_home)
+            {
+                _ui_screen_change(&ui_Main, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                                  ui_Main_screen_init);
+            }else if(lv_event_get_target(e) == img_leftarr){
+                _ui_screen_change(&ui_Menu, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                                  ui_Menu_screen_init);
+            }
+            break;
 
     case LV_EVENT_CLICKED:
         lv_obj_t *btn = lv_event_get_target(e);
@@ -98,18 +101,8 @@ void ui_Menustrap_screen_init(void)
     lv_obj_add_flag(img_qr_code, LV_OBJ_FLAG_CLICKABLE);
     lv_obj_add_event_cb(img_qr_code, button_click_handler, LV_EVENT_SHORT_CLICKED, NULL);
 
-    white_btn = lv_btn_create(ui_Menustrap);
-    lv_obj_set_pos(white_btn, 0, 259);
-    lv_obj_set_size(white_btn, 480, 36);
-    lv_obj_set_style_radius(white_btn, 12, LV_PART_MAIN);
-    lv_obj_set_style_bg_color(white_btn, lv_color_hex(0xFFFFFF), LV_PART_MAIN);
-    lv_obj_set_style_bg_opa(white_btn, LV_OPA_0, LV_PART_MAIN);
-    lv_obj_clear_flag(white_btn, LV_OBJ_FLAG_SCROLLABLE); /// Flags
-    lv_obj_add_event_cb(white_btn, button_click_handler, LV_EVENT_CLICKED, NULL);
-
-    lv_obj_t *ui_LabelButton = lv_label_create(white_btn);
-    // lv_label_
-    lv_obj_align(ui_LabelButton, LV_ALIGN_CENTER, 0, 0);
+    lv_obj_t *ui_LabelButton = lv_label_create(ui_Menustrap);
+    lv_obj_align(ui_LabelButton, LV_ALIGN_BOTTOM_MID, 0, -40);
     lv_obj_set_style_text_font(ui_LabelButton, &MiSansBold_26, 0);
     lv_label_set_text(ui_LabelButton, "打开微信，扫码绑定设备");
     lv_obj_set_style_text_color(ui_LabelButton, lv_color_hex(0xFFFFFF), 0);
