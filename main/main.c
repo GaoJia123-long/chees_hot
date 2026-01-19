@@ -37,8 +37,16 @@ void app_main(void)
     // lv_disp_load_scr(ui_Menustrap);
     // ui_Netset_screen_init();
     // lv_disp_load_scr(ui_Netset);
-    ui_Netpassword_screen_init();
-    lv_disp_load_scr(ui_Netpassword);
+    // ui_Netpassword_screen_init();
+    // lv_disp_load_scr(ui_Netpassword);
+    // ui_Defaults_screen_init();
+    // lv_disp_load_scr(ui_Defaults);
+    // ui_Volume_screen_init();
+    // lv_disp_load_scr(ui_Volume);
+    // ui_Lights_screen_init();
+    // lv_disp_load_scr(ui_Lights);
+    ui_Factory_screen_init();
+    lv_disp_load_scr(ui_Factory);
     bsp_display_unlock();
 
     bsp_display_set_brightness(100);

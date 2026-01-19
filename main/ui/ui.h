@@ -29,6 +29,18 @@ extern lv_obj_t *ui_Netset;
 extern void ui_Netpassword_screen_init(void);
 extern lv_obj_t *ui_Netpassword;
 
+extern void ui_Defaults_screen_init(void);
+extern lv_obj_t *ui_Defaults;
+
+extern void ui_Volume_screen_init(void);
+extern lv_obj_t *ui_Volume;
+
+extern void ui_Lights_screen_init(void);
+extern lv_obj_t *ui_Lights;
+
+extern void ui_Factory_screen_init(void);
+extern lv_obj_t *ui_Factory;
+
 LV_IMG_DECLARE(demo);
 LV_IMG_DECLARE(no_visiondemo);
 LV_IMG_DECLARE(set_image);
@@ -63,6 +75,9 @@ LV_IMG_DECLARE(wifi3_image);
 LV_IMG_DECLARE(closeeye_image);
 LV_IMG_DECLARE(openeye_image);
 LV_IMG_DECLARE(closeeye_image);
+LV_IMG_DECLARE(lights);
+LV_IMG_DECLARE(slide_image);
+LV_IMG_DECLARE(volum_image);
 
 LV_FONT_DECLARE(MiSansBold_26);
 LV_FONT_DECLARE(MiSansRegular_40);
