@@ -41,6 +41,24 @@ extern lv_obj_t *ui_Lights;
 extern void ui_Factory_screen_init(void);
 extern lv_obj_t *ui_Factory;
 
+extern void ui_Test_newversion_screen_init(void);
+extern lv_obj_t *ui_Test_newversion;
+
+extern void ui_Updateing_screen_init(void);
+extern lv_obj_t *ui_Updateing;
+
+extern void ui_Updateok_screen_init(void);
+extern lv_obj_t *ui_Updateok;
+
+extern void ui_Newversion_screen_init(void);
+extern lv_obj_t *ui_Newversion;
+
+extern void ui_About_screen_init(void);
+extern lv_obj_t *ui_About;
+
+extern void ui_Language_screen_init(void);
+extern lv_obj_t *ui_Language;
+
 LV_IMG_DECLARE(demo);
 LV_IMG_DECLARE(no_visiondemo);
 LV_IMG_DECLARE(set_image);
@@ -78,6 +96,9 @@ LV_IMG_DECLARE(closeeye_image);
 LV_IMG_DECLARE(lights);
 LV_IMG_DECLARE(slide_image);
 LV_IMG_DECLARE(volum_image);
+LV_IMG_DECLARE(notice_image);
+LV_IMG_DECLARE(updateing_image);
+LV_IMG_DECLARE(updateok_image);
 
 LV_FONT_DECLARE(MiSansBold_26);
 LV_FONT_DECLARE(MiSansRegular_40);

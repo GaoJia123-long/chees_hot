@@ -45,8 +45,20 @@ void app_main(void)
     // lv_disp_load_scr(ui_Volume);
     // ui_Lights_screen_init();
     // lv_disp_load_scr(ui_Lights);
-    ui_Factory_screen_init();
-    lv_disp_load_scr(ui_Factory);
+    // ui_Factory_screen_init();
+    // lv_disp_load_scr(ui_Factory);
+    // ui_Test_newversion_screen_init();
+    // lv_disp_load_scr(ui_Test_newversion);
+    // ui_Updateing_screen_init();
+    // lv_disp_load_scr(ui_Updateing);
+    // ui_Updateok_screen_init();
+    // lv_disp_load_scr(ui_Updateok);
+    // ui_Newversion_screen_init();
+    // lv_disp_load_scr(ui_Newversion);
+    // ui_About_screen_init();
+    // lv_disp_load_scr(ui_About);
+    ui_Language_screen_init();
+    lv_disp_load_scr(ui_Language);
     bsp_display_unlock();
 
     bsp_display_set_brightness(100);
