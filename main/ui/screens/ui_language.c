@@ -62,10 +62,13 @@ static void button_click_handler(lv_event_t *e)
     switch (code)
     {
     case LV_EVENT_SHORT_CLICKED:
-        if (lv_event_get_target(e) == img_home || lv_event_get_target(e) == img_leftarr)
+        if (lv_event_get_target(e) == img_home)
         {
             _ui_screen_change(&ui_Main, LV_SCR_LOAD_ANIM_NONE, 0, 0,
                               ui_Main_screen_init);
+        }else if(lv_event_get_target(e) == img_leftarr){
+            _ui_screen_change(&ui_Defaults, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                              ui_Defaults_screen_init);
         }
         break;
 

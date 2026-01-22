@@ -38,6 +38,12 @@ static void update_button_colors(lv_obj_t *selected_btn)
     }else if(selected_btn == white_btn2){
         _ui_screen_change(&ui_Menustrap, LV_SCR_LOAD_ANIM_NONE, 0, 0,
                                       ui_Menustrap_screen_init);
+    }else if(selected_btn == white_btn3){
+        _ui_screen_change(&ui_Netset, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                                      ui_Netset_screen_init);
+    }else if(selected_btn == white_btn4){
+        _ui_screen_change(&ui_Defaults, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                                      ui_Defaults_screen_init);
     }
     //if(selected_btn != NULL) {
     //    

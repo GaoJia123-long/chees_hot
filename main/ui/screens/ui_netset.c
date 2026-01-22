@@ -246,7 +246,8 @@ static void netset_item_handler(lv_event_t *e)
         switch (item_id)
         {
         case 0: // Wi-Fi设置
-            printf("打开Wi-Fi设置\n");
+            _ui_screen_change(&ui_Netpassword, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                              ui_Netpassword_screen_init);
             break;
         case 1: // 蓝牙设置
             printf("打开蓝牙设置\n");

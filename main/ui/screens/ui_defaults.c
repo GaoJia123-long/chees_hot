@@ -40,19 +40,33 @@ static void update_button_colors(lv_obj_t *selected_btn)
     lv_obj_set_style_bg_opa(selected_btn, LV_OPA_100, LV_PART_MAIN);
 
     // 将选中的按钮设置为选中状态（0xE8E8E8，透明度100）
-    // if (selected_btn == white_btn)
-    // {
-    //     _ui_screen_change(&ui_Username, LV_SCR_LOAD_ANIM_NONE, 0, 0,
-    //                       ui_Username_screen_init);
-    // }
-    // else if (selected_btn == white_btn2)
-    // {
-    //     _ui_screen_change(&ui_Defaults, LV_SCR_LOAD_ANIM_NONE, 0, 0,
-    //                       ui_Defaults_screen_init);
-    // }
-    // if(selected_btn != NULL) {
-    //
-    // }
+     if (selected_btn == white_btn)
+     {
+         _ui_screen_change(&ui_Volume, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                           ui_Volume_screen_init);
+     }
+     else if (selected_btn == white_btn2)
+     {
+         _ui_screen_change(&ui_Lights, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                           ui_Lights_screen_init);
+     }else if (selected_btn == white_btn3)
+     {
+         _ui_screen_change(&ui_Language, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                           ui_Language_screen_init);
+     }else if (selected_btn == white_btn4)
+     {
+         _ui_screen_change(&ui_About, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                           ui_About_screen_init);
+     }else if (selected_btn == white_btn5)
+     {
+         _ui_screen_change(&ui_Test_newversion, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                           ui_Test_newversion_screen_init);
+     }else if (selected_btn == white_btn6)
+     {
+         _ui_screen_change(&ui_Factory, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                           ui_Factory_screen_init);
+     }
+     
 }
 
 // 按钮点击事件处理函数

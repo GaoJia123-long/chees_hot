@@ -56,10 +56,13 @@ static void button_click_handler(lv_event_t *e)
     switch (code)
     {
     case LV_EVENT_SHORT_CLICKED:
-        if (lv_event_get_target(e) == img_home || lv_event_get_target(e) == img_leftarr)
+        if (lv_event_get_target(e) == img_home)
         {
             _ui_screen_change(&ui_Main, LV_SCR_LOAD_ANIM_NONE, 0, 0,
                               ui_Main_screen_init);
+        }else if(lv_event_get_target(e) == img_leftarr){
+            _ui_screen_change(&ui_Netset, LV_SCR_LOAD_ANIM_NONE, 0, 0,
+                              ui_Netset_screen_init);
         }
         break;
 
@@ -127,7 +130,7 @@ void ui_Netpassword_screen_init(void)
     lv_obj_set_style_bg_color(wifi_btn2, lv_color_hex(0xffffff), LV_PART_MAIN);
     lv_obj_set_style_bg_opa(wifi_btn2, LV_OPA_100, LV_PART_MAIN); // 41是透明度为16%
     lv_obj_clear_flag(wifi_btn2, LV_OBJ_FLAG_SCROLLABLE);         /// Flags
-    lv_obj_add_event_cb(wifi_btn2, button_click_handler, LV_EVENT_CLICKED, NULL);
+    //lv_obj_add_event_cb(wifi_btn2, button_click_handler, LV_EVENT_CLICKED, NULL);
 
     lv_obj_t *ui_LabelButton2 = lv_label_create(wifi_btn2);
     // lv_label_
@@ -143,7 +146,7 @@ void ui_Netpassword_screen_init(void)
     lv_obj_set_style_bg_color(wifi_btn3, lv_color_hex(0xffffff), LV_PART_MAIN);
     lv_obj_set_style_bg_opa(wifi_btn3, LV_OPA_100, LV_PART_MAIN); // 41是透明度为16%
     lv_obj_clear_flag(wifi_btn3, LV_OBJ_FLAG_SCROLLABLE);         /// Flags
-    lv_obj_add_event_cb(wifi_btn3, button_click_handler, LV_EVENT_CLICKED, NULL);
+    //lv_obj_add_event_cb(wifi_btn3, button_click_handler, LV_EVENT_CLICKED, NULL);
 
     img_openeye = lv_img_create(ui_Netpassword);
     lv_img_set_src(img_openeye, &openeye_image);
@@ -165,7 +168,7 @@ void ui_Netpassword_screen_init(void)
     lv_obj_set_style_bg_color(wifi_btn4, lv_color_hex(0xffffff), LV_PART_MAIN);
     lv_obj_set_style_bg_opa(wifi_btn4, 41, LV_PART_MAIN); // 41是透明度为16%
     lv_obj_clear_flag(wifi_btn4, LV_OBJ_FLAG_SCROLLABLE); /// Flags
-    lv_obj_add_event_cb(wifi_btn4, button_click_handler, LV_EVENT_CLICKED, NULL);
+    //lv_obj_add_event_cb(wifi_btn4, button_click_handler, LV_EVENT_CLICKED, NULL);
 
     lv_obj_t *ui_LabelButton4 = lv_label_create(wifi_btn4);
     // lv_label_
@@ -181,7 +184,7 @@ void ui_Netpassword_screen_init(void)
     lv_obj_set_style_bg_color(wifi_btn5, lv_color_hex(0xFF851A), LV_PART_MAIN);
     lv_obj_set_style_bg_opa(wifi_btn5, LV_OPA_100, LV_PART_MAIN); // 41是透明度为16%
     lv_obj_clear_flag(wifi_btn5, LV_OBJ_FLAG_SCROLLABLE);         /// Flags
-    lv_obj_add_event_cb(wifi_btn5, button_click_handler, LV_EVENT_CLICKED, NULL);
+    //lv_obj_add_event_cb(wifi_btn5, button_click_handler, LV_EVENT_CLICKED, NULL);
 
     lv_obj_t *ui_LabelButton5 = lv_label_create(wifi_btn5);
     // lv_label_
