@@ -59,6 +59,12 @@ extern lv_obj_t *ui_About;
 extern void ui_Language_screen_init(void);
 extern lv_obj_t *ui_Language;
 
+extern void ui_Tating_screen_init(void);
+extern lv_obj_t *ui_Tating;
+
+extern void ui_Weiqitating_screen_init(void);
+extern lv_obj_t *ui_Weiqitating;
+
 LV_IMG_DECLARE(demo);
 LV_IMG_DECLARE(no_visiondemo);
 LV_IMG_DECLARE(set_image);
@@ -99,6 +105,8 @@ LV_IMG_DECLARE(volum_image);
 LV_IMG_DECLARE(notice_image);
 LV_IMG_DECLARE(updateing_image);
 LV_IMG_DECLARE(updateok_image);
+LV_IMG_DECLARE(ratingyellow_image);
+LV_IMG_DECLARE(ratingblack_image);
 
 LV_FONT_DECLARE(MiSansBold_26);
 LV_FONT_DECLARE(MiSansRegular_40);

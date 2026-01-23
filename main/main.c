@@ -59,6 +59,10 @@ void app_main(void)
     // lv_disp_load_scr(ui_About);
     //ui_Language_screen_init();
     //lv_disp_load_scr(ui_Language);
+    // ui_Tating_screen_init();
+    // lv_disp_load_scr(ui_Tating);
+    ui_Weiqitating_screen_init();
+    lv_disp_load_scr(ui_Weiqitating);
     bsp_display_unlock();
 
     bsp_display_set_brightness(100);

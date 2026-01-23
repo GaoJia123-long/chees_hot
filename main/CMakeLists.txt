@@ -21,6 +21,8 @@ idf_component_register(SRCS
                             "ui/screens/ui_updateing.c"
                             "ui/screens/ui_updateok.c"
                             "ui/screens/ui_language.c"
+                            "ui/screens/ui_tating.c"
+                            "ui/screens/ui_weiqitating.c"
                             "ui/images/demo.c"
                             "ui/images/no_visiondemo.c"
                             "ui/images/set_image.c"
@@ -61,6 +63,8 @@ idf_component_register(SRCS
                             "ui/images/notice_image.c"
                             "ui/images/updateing_image.c"
                             "ui/images/updateok_image.c"
+                            "ui/images/ratingblack_image.c"
+                            "ui/images/ratingyellow_image.c"
 
                             "ui/fonts/MiSansBold_26.c"
                             "ui/fonts/MiSansRegular_40.c"
