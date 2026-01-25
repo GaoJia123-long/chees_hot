@@ -65,6 +65,12 @@ extern lv_obj_t *ui_Tating;
 extern void ui_Weiqitating_screen_init(void);
 extern lv_obj_t *ui_Weiqitating;
 
+extern void ui_VS_screen_init(void);
+extern lv_obj_t *ui_VS;
+
+extern void ui_Unhappy_screen_init(void);
+extern lv_obj_t *ui_Unhappy;
+
 LV_IMG_DECLARE(demo);
 LV_IMG_DECLARE(no_visiondemo);
 LV_IMG_DECLARE(set_image);
@@ -107,6 +113,24 @@ LV_IMG_DECLARE(updateing_image);
 LV_IMG_DECLARE(updateok_image);
 LV_IMG_DECLARE(ratingyellow_image);
 LV_IMG_DECLARE(ratingblack_image);
+LV_IMG_DECLARE(sun_image);
+LV_IMG_DECLARE(vs_image);
+LV_IMG_DECLARE(yellow_image);
+LV_IMG_DECLARE(but85X46);
+LV_IMG_DECLARE(checkerblack_image);
+LV_IMG_DECLARE(checkerwhite_image);
+LV_IMG_DECLARE(pa_image);
+LV_IMG_DECLARE(blue_image);
+LV_IMG_DECLARE(but70X46);
+LV_IMG_DECLARE(remorse_image);
+LV_IMG_DECLARE(stop_image);
+LV_IMG_DECLARE(backdown_image);
+LV_IMG_DECLARE(count_image);
+LV_IMG_DECLARE(unhappy_image);
+LV_IMG_DECLARE(redcchess_image);
+LV_IMG_DECLARE(whitecchess_image);
+LV_IMG_DECLARE(whitechess_image);
+LV_IMG_DECLARE(blackchess_image);
 
 LV_FONT_DECLARE(MiSansBold_26);
 LV_FONT_DECLARE(MiSansRegular_40);
